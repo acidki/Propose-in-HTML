@@ -1,2 +1,83 @@
 # Propose-in-HTML
 Can’t propose to your crush directly? I got you, buddy. Use this HTML code—thank me later! 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confession</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #d0bfff); /* Gradient background */
+      padding: 30px;
+      text-align: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .confession {
+      background-color: white;
+      border: 2px solid #ccc;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    .accept {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .reject {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="confession">
+    <h2>🎉 Congrats, my favorite human 🏆🎉</h2>
+    <p>Guess what? You just unlocked a confession straight from the heart. 💘</p>
+    <p>You probably don’t realize it, but you’ve been the brightest part of my days</p>
+    <p>You were the unexpected ray of light that entered my life when everything felt dull.</p>
+    <p>Your smile? It’s like a sunrise that chases away all the darkness inside me.</p>
+    <p>I don’t know what tomorrow holds, but today, I just wanted to be honest with my heart.</p>
+    <p>So here it is — my little confession to you, wrapped with courage and a whole lot of feelings. ❤️</p>
+    <p>So, I guess what I’ve been trying to say all along is... I love you. 💖</p>
+    <p>Umm... may I know your answer? Will you accept this little confession of mine?</p>
+    <div class="buttons">
+      <button class="accept" onclick="handleResponse('accept')">Accept</button>
+      <button class="reject" onclick="handleResponse('reject')">Reject</button>
+    </div>
+  </div>
+  <script>
+    function handleResponse(choice) {
+      if (choice === 'accept') {
+        alert("Thank you for accepting my feelings. You’ve just made me the happiest person alive. 💖");
+        window.open("https://your-google-form-link.com", "_blank");
+      } else if (choice === 'reject') {
+        alert("Thank You for Being Honest. I understand, and I truly respect your decision 💔");
+      }
+    }
+  </script>
+</body>
+</html>
